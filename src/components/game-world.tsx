@@ -87,8 +87,7 @@ export const GameWorld = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-blue-400 to-green-600">
       {/* Background elements for jungle feel */}
-      <div className="absolute inset-0 bg-[url('/globe.svg')] bg-repeat opacity-10 animate-pulse-slow"></div>
-      <div className="absolute inset-0 bg-[url('/file.svg')] bg-repeat opacity-5 animate-pulse-fast"></div>
+      {/* Removed globe.svg and file.svg as requested */}
 
       {/* Game Path */}
       <GamePath pathOffset={pathOffset} />
