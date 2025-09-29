@@ -8,6 +8,7 @@ import { AboutMeSection } from "./sections/about-me-section";
 import { SkillsSection } from "./sections/skills-section";
 import { ProjectsSection } from "./sections/projects-section";
 import { ContactSection } from "./sections/contact-section";
+import { Button } from "@/components/ui/button"; // Import Button for the restart option
 
 export type GameStage = "intro" | "about" | "skills" | "projects" | "contact" | "end";
 
@@ -33,6 +34,11 @@ export const GameWorld = () => {
     }
   };
 
+  const resetGame = () => {
+    setCurrentStage("intro");
+    setPathOffset(0);
+  };
+
   const renderSection = () => {
     switch (currentStage) {
       case "about":
@@ -43,6 +49,21 @@ export const GameWorld = () => {
         return <ProjectsSection />;
       case "contact":
         return <ContactSection />;
+      case "end":
+        return (
+          <div className="flex flex-col items-center justify-center h-full text-white text-center p-8">
+            <h2 className="text-5xl font-bold mb-4 text-yellow-300 drop-shadow-lg">Journey Complete!</h2>
+            <p className="text-xl mb-8 max-w-2xl">
+              You've successfully navigated through my portfolio. Thanks for exploring!
+            </p>
+            <Button
+              onClick={resetGame}
+              className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full shadow-lg flex items-center gap-2"
+            >
+              Start New Journey
+            </Button>
+          </div>
+        );
       case "intro":
       default:
         return (

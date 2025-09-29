@@ -13,7 +13,7 @@ export const GamePath = ({ pathOffset }: GamePathProps) => {
     >
       {/* Path texture / details */}
       <div className="absolute inset-0 bg-[url('/window.svg')] bg-repeat-x bg-bottom opacity-20 animate-scroll-path"></div>
-      <div className="absolute inset-0 bg-[url('/next.svg')] bg-repeat-x bg-bottom opacity-10 animate-scroll-path-slow"></div>
+      {/* Removed bg-[url('/next.svg')] as requested */}
     </div>
   );
 };
