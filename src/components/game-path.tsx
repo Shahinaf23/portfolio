@@ -12,8 +12,7 @@ export const GamePath = ({ pathOffset }: GamePathProps) => {
       style={{ transform: `translateY(${pathOffset}px)` }}
     >
       {/* Path texture / details */}
-      <div className="absolute inset-0 bg-[url('/window.svg')] bg-repeat-x bg-bottom opacity-20 animate-scroll-path"></div>
-      {/* Removed bg-[url('/next.svg')] as requested */}
+      {/* Removed moving background image to prevent blending */}
     </div>
   );
 };
