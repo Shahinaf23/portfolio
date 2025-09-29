@@ -85,7 +85,7 @@ export const GameWorld = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-blue-400 to-green-600">
+    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-green-800 to-emerald-950">
       {/* Background elements for jungle feel */}
       {/* Removed globe.svg and file.svg as requested */}
 
