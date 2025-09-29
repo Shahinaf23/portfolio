@@ -1,13 +1,14 @@
 import React from "react";
 import { SkillPowerUp } from "../game-ui/skill-power-up";
-import { Code, Layout, Database, Zap, Brain } from "lucide-react";
+import { Code, Layout, Database, Zap, Brain, Terminal, HardDrive, Sparkles } from "lucide-react";
 
 export const SkillsSection = () => {
   const skills = [
-    { name: "Frontend Dev", icon: Code, color: "text-blue-400" },
-    { name: "UI/UX Design", icon: Layout, color: "text-purple-400" },
-    { name: "Backend Dev", icon: Database, color: "text-green-400" },
-    { name: "Performance", icon: Zap, color: "text-red-400" },
+    { name: "SQL", icon: Database, color: "text-blue-400" },
+    { name: "Python", icon: Code, color: "text-green-400" },
+    { name: "Linux", icon: Terminal, color: "text-gray-400" },
+    { name: "Hadoop", icon: HardDrive, color: "text-orange-400" },
+    { name: "Spark", icon: Sparkles, color: "text-red-400" },
     { name: "Problem Solving", icon: Brain, color: "text-yellow-400" },
   ];
 
