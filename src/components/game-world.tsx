@@ -9,7 +9,9 @@ import { SkillsSection } from "./sections/skills-section";
 import { ProjectsSection } from "./sections/projects-section";
 import { ContactSection } from "./sections/contact-section";
 import { Button } from "@/components/ui/button";
-import { GameGuideAvatar } from "./game-guide-avatar"; // Import the new avatar component
+import { GameGuideAvatar } from "./game-guide-avatar";
+import { FloatingElement } from "./game-ui/floating-element"; // Import FloatingElement
+import { TreePine, Cloud, Sparkles, Mountain } from "lucide-react"; // Import icons
 
 export type GameStage = "intro" | "about" | "skills" | "projects" | "contact" | "end";
 
@@ -87,8 +89,14 @@ export const GameWorld = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-green-800 to-emerald-950">
-      {/* Background elements for jungle feel */}
-      {/* Removed globe.svg and file.svg as requested */}
+      {/* Floating Background Elements */}
+      <FloatingElement icon={TreePine} size="w-20 h-20" color="text-green-700" positionClasses="top-10 left-1/4" delay={0} animation="float" />
+      <FloatingElement icon={Cloud} size="w-24 h-24" color="text-gray-400" positionClasses="top-20 right-1/3" delay={1.5} animation="pulse-slow" />
+      <FloatingElement icon={Sparkles} size="w-16 h-16" color="text-yellow-300" positionClasses="bottom-1/3 left-1/3" delay={0.8} animation="spin-slow" />
+      <FloatingElement icon={Mountain} size="w-32 h-32" color="text-green-900" positionClasses="top-0 left-10" delay={2.5} animation="float" />
+      <FloatingElement icon={TreePine} size="w-16 h-16" color="text-green-600" positionClasses="bottom-1/4 right-1/4" delay={0.5} animation="float" />
+      <FloatingElement icon={Cloud} size="w-20 h-20" color="text-gray-300" positionClasses="top-1/2 left-10" delay={2} animation="pulse-slow" />
+
 
       {/* Game Path */}
       <GamePath pathOffset={pathOffset} />
