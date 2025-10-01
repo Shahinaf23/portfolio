@@ -12,7 +12,7 @@ export const ContactSection = () => {
     // You can add an avatarUrl here if you have an image:
     // avatarUrl: "/path/to/your/hijab-avatar.png",
     githubUrl: "https://github.com/shahina", // Replace with actual GitHub URL
-    linkedinUrl: "https://linkedin.com/in/shahina", // Replace with actual LinkedIn URL
+    linkedinUrl: "https://www.linkedin.com/in/shahina-fathima-9550981ba/", // Replace with actual LinkedIn URL
     twitterUrl: "https://twitter.com/shahina", // Replace with actual Twitter URL
   };
 
