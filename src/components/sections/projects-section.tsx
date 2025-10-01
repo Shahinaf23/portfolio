@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     id: "proj3",
     title: "Translang",
-    description: "A desktop application for exploring mystical phenomena and ancient prophecies. Built with Electron and Python.",
+    description: "It is a lightweight, interactive translation application that enables seamless translation between any two languages. Built with Flask as the backend and Streamlit as the frontend, the app provides a simple yet powerful interface for real-time multilingual communication..",
     imageUrl: "/window.svg", // Placeholder image
     link: "https://example.com/project3",
   },
