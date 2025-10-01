@@ -8,7 +8,8 @@ import { AboutMeSection } from "./sections/about-me-section";
 import { SkillsSection } from "./sections/skills-section";
 import { ProjectsSection } from "./sections/projects-section";
 import { ContactSection } from "./sections/contact-section";
-import { Button } from "@/components/ui/button"; // Import Button for the restart option
+import { Button } from "@/components/ui/button";
+import { GameGuideAvatar } from "./game-guide-avatar"; // Import the new avatar component
 
 export type GameStage = "intro" | "about" | "skills" | "projects" | "contact" | "end";
 
@@ -111,6 +112,9 @@ export const GameWorld = () => {
           />
         </div>
       )}
+
+      {/* Game Guide Avatar */}
+      <GameGuideAvatar currentStage={currentStage} />
     </div>
   );
 };
