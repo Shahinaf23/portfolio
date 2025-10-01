@@ -1,7 +1,6 @@
 import React from "react";
-import { TreasureChest } from "../game-ui/treasure-chest";
-import { ProjectDetailsDialog } from "../game-ui/project-details-dialog";
-import { toast } from "sonner";
+import { ProjectCard } from "../game-ui/project-card"; // Import the new ProjectCard
+import { toast } from "sonner"; // Keep toast for potential future use, though not directly used here now
 
 export interface Project {
   id: string;
@@ -26,32 +25,27 @@ const projects: Project[] = [
     imageUrl: "/globe.svg", // Placeholder image
     link: "https://example.com/project2",
   },
+  {
+    id: "proj3",
+    title: "Mystic Window",
+    description: "A desktop application for exploring mystical phenomena and ancient prophecies. Built with Electron and Python.",
+    imageUrl: "/window.svg", // Placeholder image
+    link: "https://example.com/project3",
+  },
   // Add more projects here
 ];
 
 export const ProjectsSection = () => {
-  const [selectedProject, setSelectedProject] = React.useState<Project | null>(null);
-
-  const handleOpenProject = (project: Project) => {
-    setSelectedProject(project);
-    toast.info(`Opening ${project.title}...`);
-  };
+  // No need for selectedProject state or handleOpenProject as dialog is removed.
 
   return (
     <div className="relative flex flex-col items-center justify-center h-full w-full p-4">
       <h2 className="text-4xl font-bold text-yellow-300 drop-shadow-lg mb-8">Projects: Unearth the Treasures!</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {projects.map((project) => (
-          <TreasureChest key={project.id} project={project} onOpen={handleOpenProject} />
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      {selectedProject && (
-        <ProjectDetailsDialog
-          project={selectedProject}
-          isOpen={!!selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
     </div>
   );
 };
