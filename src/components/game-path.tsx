@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { cn } from "@/lib/utils";
 import { PathDecoration } from "./game-ui/path-decoration"; // Import the new component
