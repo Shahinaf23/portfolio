@@ -13,7 +13,7 @@ export interface Project {
 const projects: Project[] = [
   {
     id: "proj1",
-    title: "Ancient Scroll Decoder",
+    title: "Document Management System",
     description: "A web application that deciphers ancient texts using advanced algorithms. Built with React and Node.js.",
     imageUrl: "/file.svg", // Placeholder image
     link: "https://example.com/project1",
