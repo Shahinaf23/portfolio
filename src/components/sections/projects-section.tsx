@@ -20,14 +20,14 @@ const projects: Project[] = [
   },
   {
     id: "proj2",
-    title: "Jungle Explorer Map",
+    title: "Resume Matcher",
     description: "An interactive map tool for navigating complex jungle terrains. Features real-time tracking and pathfinding.",
     imageUrl: "/globe.svg", // Placeholder image
     link: "https://example.com/project2",
   },
   {
     id: "proj3",
-    title: "Mystic Window",
+    title: "Translang",
     description: "A desktop application for exploring mystical phenomena and ancient prophecies. Built with Electron and Python.",
     imageUrl: "/window.svg", // Placeholder image
     link: "https://example.com/project3",
