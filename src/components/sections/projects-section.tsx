@@ -14,14 +14,14 @@ const projects: Project[] = [
   {
     id: "proj1",
     title: "Document Management System",
-    description: "A web application that deciphers ancient texts using advanced algorithms. Built with React and Node.js.",
+    description: "Automated extraction of document variables from 490+ unstructured Excel files using TypeScript-based parsing and regex, building a real-time analytics pipeline that improved project visibility by 60%.",
     imageUrl: "/file.svg", // Placeholder image
     link: "https://example.com/project1",
   },
   {
     id: "proj2",
     title: "Resume Matcher",
-    description: "An interactive map tool for navigating complex jungle terrains. Features real-time tracking and pathfinding.",
+    description: "Engineered a full-stack resume-matching platform leveraging NLP and machine learning to automate skill extraction and ranking from PDF resumes, processing 100+ resumes per batch.",
     imageUrl: "/globe.svg", // Placeholder image
     link: "https://example.com/project2",
   },
