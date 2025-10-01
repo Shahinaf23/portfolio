@@ -5,13 +5,13 @@ export const ContactSection = () => {
   // Hardcoded data for the profile card as per the image
   const profileData = {
     name: "Shahina Fathima",
-    title: "Software Developer",
+    title: "Data Engineer",
     email: "shahinaf93@gmail.com",
-    phone: "+1 (123) 456-7890",
+    phone: "+91 9944114973|+971 503933689",
     location: "Chennai,India|Abudhabi,UAE",
     // You can add an avatarUrl here if you have an image:
     // avatarUrl: "/path/to/your/hijab-avatar.png",
-    githubUrl: "https://github.com/shahina", // Replace with actual GitHub URL
+    githubUrl: "https://github.com/Shahinaf23", // Replace with actual GitHub URL
     linkedinUrl: "https://www.linkedin.com/in/shahina-fathima-9550981ba/", // Replace with actual LinkedIn URL
     twitterUrl: "https://twitter.com/shahina", // Replace with actual Twitter URL
   };
