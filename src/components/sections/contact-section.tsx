@@ -6,10 +6,9 @@ export const ContactSection = () => {
   const profileData = {
     name: "Shahina Fathima",
     title: "Software Developer",
-    email: "shahina.fathima@example.com",
+    email: "shahinaf93@gmail.com",
     phone: "+1 (123) 456-7890",
-    dob: "May 15, 1995",
-    location: "New York, USA",
+    location: "Chennai,India|Abudhabi,UAE",
     // You can add an avatarUrl here if you have an image:
     // avatarUrl: "/path/to/your/hijab-avatar.png",
     githubUrl: "https://github.com/shahina", // Replace with actual GitHub URL
