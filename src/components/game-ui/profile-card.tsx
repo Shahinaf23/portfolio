@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Mail, Phone, Calendar, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"; // Removed Calendar and Twitter icons
 import { cn } from "@/lib/utils";
 
 interface ProfileCardProps {
@@ -10,12 +10,10 @@ interface ProfileCardProps {
   title: string;
   email: string;
   phone: string;
-  dob: string;
   location: string;
   avatarUrl?: string;
   githubUrl?: string;
   linkedinUrl?: string;
-  twitterUrl?: string;
 }
 
 export const ProfileCard = ({
@@ -23,12 +21,10 @@ export const ProfileCard = ({
   title,
   email,
   phone,
-  dob,
   location,
   avatarUrl,
   githubUrl,
   linkedinUrl,
-  twitterUrl,
 }: ProfileCardProps) => {
   return (
     <div className="w-full max-w-md bg-gray-900 p-8 rounded-lg shadow-xl flex flex-col items-center text-white animate-fade-in">
@@ -51,10 +47,7 @@ export const ProfileCard = ({
           <Phone className="w-6 h-6 text-orange-400" />
           <span>{phone}</span>
         </div>
-        <div className="flex items-center gap-4">
-          <Calendar className="w-6 h-6 text-orange-400" />
-          <span>{dob}</span>
-        </div>
+        {/* Removed Date of Birth field */}
         <div className="flex items-center gap-4">
           <MapPin className="w-6 h-6 text-orange-400" />
           <span>{location}</span>
@@ -72,11 +65,7 @@ export const ProfileCard = ({
             <Linkedin className="w-7 h-7" />
           </a>
         )}
-        {twitterUrl && (
-          <a href={twitterUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-400 transition-colors">
-            <Twitter className="w-7 h-7" />
-          </a>
-        )}
+        {/* Removed Twitter link */}
       </div>
     </div>
   );

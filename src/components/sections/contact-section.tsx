@@ -13,7 +13,7 @@ export const ContactSection = () => {
     // avatarUrl: "/path/to/your/hijab-avatar.png",
     githubUrl: "https://github.com/Shahinaf23", // Replace with actual GitHub URL
     linkedinUrl: "https://www.linkedin.com/in/shahina-fathima-9550981ba/", // Replace with actual LinkedIn URL
-    twitterUrl: "https://twitter.com/shahina", // Replace with actual Twitter URL
+    // Removed twitterUrl
   };
 
   return (
