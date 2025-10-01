@@ -34,6 +34,7 @@ const projects: Project[] = [
     description: "It is a lightweight, interactive translation application that enables seamless translation between any two languages. Built with Flask as the backend and Streamlit as the frontend, the app provides a simple yet powerful interface for real-time multilingual communication.",
     imageUrl: "/window.svg",
     link: "https://example.com/project3",
+    videoUrl: "/videos/translang-chatbot.mp4", // Path to the uploaded video
   },
   // Add more projects here
 ];
