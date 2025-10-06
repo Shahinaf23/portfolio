@@ -5,7 +5,8 @@ import { Icon as LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface FloatingElementProps {
-  icon: LucideIcon;
+  // icon should be a React component (an SVG component from lucide-react)
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   className?: string;
   size?: string; // e.g., "w-10 h-10"
   color?: string; // e.g., "text-green-400"

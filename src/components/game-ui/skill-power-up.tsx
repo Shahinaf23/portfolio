@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface SkillPowerUpProps {
   name: string;
-  icon: LucideIcon;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   color: string;
   delay?: number;
 }
